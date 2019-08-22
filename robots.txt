@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://zoelius.github.io/sitemap.xml
