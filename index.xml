@@ -6,7 +6,7 @@
     <description>Recent content on imx&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 23 Aug 2019 16:42:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 27 Aug 2019 16:53:53 +0800</lastBuildDate>
     
         <atom:link href="https://zoelius.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -26,11 +26,45 @@
     </item>
     
     <item>
-      <title>Windows&#43;hugo&#43;github创建个人博客网站</title>
-      <link>https://zoelius.github.io/post/windows&#43;hugo&#43;github%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</link>
-      <pubDate>Fri, 23 Aug 2019 16:42:00 +0800</pubDate>
+      <title>Git常用命令</title>
+      <link>https://zoelius.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Tue, 27 Aug 2019 16:53:53 +0800</pubDate>
       
-      <guid>https://zoelius.github.io/post/windows&#43;hugo&#43;github%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</guid>
+      <guid>https://zoelius.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      
+        <description>
+
+&lt;h2 id=&#34;git常用命令&#34;&gt;Git常用命令&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;git init&lt;/code&gt;  初始化本地代码仓库&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git remote add origin &amp;lt;服务器地址&amp;gt;&lt;/code&gt; 将本地目录链接到远程服务器的代码仓库，这样所有的更改都可以提交到远程仓库&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git status&lt;/code&gt;    列出所有已添加的文件/目录，或是被修改和需要提交的文件/目录&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git add *&lt;/code&gt;或&lt;code&gt;git add &amp;lt;文件名&amp;gt;&lt;/code&gt; 添加文件/目录才能追踪本地文件，才可以被提交&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git commit -m &amp;quot;提交信息&amp;quot;&lt;/code&gt;  提交更改，并生成可识别更新代码的提交ID&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git push origin master&lt;/code&gt;    将最后一次提交的代码推送到远程代码仓库&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;本地创建分支    &lt;code&gt;git branch  branchName&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;查看现有分支    &lt;code&gt;git branch&lt;/code&gt;   列出来的*表示当前分支&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;切换分支  &lt;code&gt;git checkout 分支名&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Windows&#43;hugo&#43;github搭建个人博客</title>
+      <link>https://zoelius.github.io/post/windows&#43;hugo&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Fri, 23 Aug 2019 16:59:06 +0800</pubDate>
+      
+      <guid>https://zoelius.github.io/post/windows&#43;hugo&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
       
         <description>
 
@@ -53,7 +87,7 @@ Hugo Static Site Generator v0.57.2-A849CB2D windows/amd64 BuildDate: 2019-08-17T
 
 &lt;p&gt;进入F:\hugo下，打开命令窗口。&lt;/p&gt;
 
-&lt;p&gt;执行命令：&lt;strong&gt;hugo new site&lt;/strong&gt; 文件名称(如blog)&lt;/p&gt;
+&lt;p&gt;执行命令：&lt;strong&gt;&lt;code&gt;hugo new site&lt;/code&gt;&lt;/strong&gt; 文件名称 (如blog)&lt;/p&gt;
 
 &lt;p&gt;执行后，在hugo目录下就会生成一个 名叫blog的站点文件夹&lt;/p&gt;
 
@@ -101,7 +135,7 @@ Hugo Static Site Generator v0.57.2-A849CB2D windows/amd64 BuildDate: 2019-08-17T
 &lt;p&gt;$ hugo server &amp;ndash;theme=hyde (ps.此处的主题名要换成自己下载的)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;（注：如果已经在 config.toml 中配置指定主题可省略 &amp;ndash;theme 参数。&lt;strong&gt;theme&lt;/strong&gt;也要改成自己的，如theme = &amp;ldquo;hyde&amp;rdquo;，没有theme就自己加上）&lt;/p&gt;
+&lt;p&gt;（注：如果已经在 config.toml 中配置指定主题可省略 &amp;ndash;theme参数。&lt;strong&gt;theme&lt;/strong&gt;也要改成自己的，如theme = &amp;ldquo;hyde&amp;rdquo;，没有theme就自己加上）&lt;/p&gt;
 
 &lt;p&gt;执行后显示&lt;/p&gt;
 
@@ -170,13 +204,13 @@ Press Ctrl+C to stop&lt;/p&gt;
 
 &lt;p&gt;添加文章内容，或者修修改改，包括修改主题之类的，在本地都可以实时看到&lt;/p&gt;
 
-&lt;p&gt;修改完成，确定要上传到GitHub上后，&lt;strong&gt;站点目录下&lt;/strong&gt;执行：&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#39;red&#39;&gt;修改完成，确定要上传到GitHub上后，&lt;strong&gt;站点目录下&lt;/strong&gt;执行&lt;/font&gt;：&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;$ hugo&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;进行编译，修改的内容就同步到public下了，然后cd到public下，执行提交：&lt;/p&gt;
+&lt;p&gt;进行编译，修改的内容就同步到public下了，然后&lt;code&gt;cd到public&lt;/code&gt;下，执行提交：&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;$ git add -A&lt;/p&gt;
